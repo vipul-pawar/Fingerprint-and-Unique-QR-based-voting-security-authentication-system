@@ -19,6 +19,7 @@
 Apps Script for data loging automation 
 
 '''
+
 function doGet(e) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
@@ -38,4 +39,5 @@ function doGet(e) {
 
   return ContentService.createTextOutput("OK");
 }
+
 '''
