@@ -13,3 +13,29 @@
    else  
        → REJECT  
 6. Store result
+
+
+
+Apps Script for data loging automation 
+
+'''
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+  // 🔷 Get parameters
+  var qr = e.parameter.qr || "N/A";
+  var fid = e.parameter.fid || "N/A";
+  var name = e.parameter.name || "Unknown";
+  var status = e.parameter.status || "N/A";
+
+  // 🔷 Add header row only once
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(["QR_ID", "Finger_ID", "Name", "Status", "Timestamp"]);
+  }
+
+  // 🔷 Append data
+  sheet.appendRow([qr, fid, name, status, new Date()]);
+
+  return ContentService.createTextOutput("OK");
+}
+'''
