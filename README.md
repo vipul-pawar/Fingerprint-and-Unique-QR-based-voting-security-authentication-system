@@ -18,9 +18,7 @@
 
 Apps Script for data loging automation 
 
-'''
-
-function doGet(e) {
+'''function doGet(e) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
   // 🔷 Get parameters
@@ -38,6 +36,4 @@ function doGet(e) {
   sheet.appendRow([qr, fid, name, status, new Date()]);
 
   return ContentService.createTextOutput("OK");
-}
-
-'''
+}'''
