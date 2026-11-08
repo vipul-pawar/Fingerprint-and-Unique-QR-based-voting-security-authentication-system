@@ -190,10 +190,38 @@ Replace `1` with each voter's unique ID (`2`, `3`, `4`, ...).
 ## Project Structure
 
 ```
-├── Fingerprint_QR_Voting_Auth.ino   # Main sketch
+├── FP_Enroll.ino                # Enrolls fingerprints and assigns IDs on the sensor
+├── FP_Matching.ino              # Tests fingerprint matching
+├── FP_PersonIdentification.ino  # Main sketch: QR + fingerprint verification, web server, Google Sheets logging
+├── screenshots/                 # Images used in this README
 └── README.md
 ```
 
+---
+
+## Screenshots
+
+### Web Interface
+
+| Home Page (Scan QR) | QR Received | Fingerprint Match |
+|:---:|:---:|:---:|
+| ![Home Page](screenshots/home.png) | ![QR Received](screenshots/qr_received.png) | ![Match](screenshots/match.png) |
+
+| Identity Mismatch | Serial Monitor Output |
+|:---:|:---:|
+| ![Mismatch](screenshots/mismatch.png) | ![Serial Monitor](screenshots/serial_monitor.png) |
+
+### Google Sheets Log
+
+![Google Sheets Log](screenshots/google_sheet.png)
+
+### Hardware Setup
+
+![Circuit](screenshots/circuit.jpg)
+
+### Unique QR Codes
+
+![QR Codes](screenshots/qr_codes.png)
 ---
 
 ## Scope and Limitations
