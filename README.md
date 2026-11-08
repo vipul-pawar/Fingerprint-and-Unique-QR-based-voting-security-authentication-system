@@ -201,27 +201,17 @@ Replace `1` with each voter's unique ID (`2`, `3`, `4`, ...).
 
 ## Screenshots
 
+### Full System (Hardware Setup)
+
+![Full System](screenshots/Full%20System.jpg)
+
 ### Web Interface
 
-| Home Page (Scan QR) | QR Received | Fingerprint Match |
-|:---:|:---:|:---:|
-| ![Home Page](screenshots/home.png) | ![QR Received](screenshots/qr_received.png) | ![Match](screenshots/match.png) |
-
-| Identity Mismatch | Serial Monitor Output |
-|:---:|:---:|
-| ![Mismatch](screenshots/mismatch.png) | ![Serial Monitor](screenshots/serial_monitor.png) |
+![Web Interface](screenshots/web%20interface.jpg)
 
 ### Google Sheets Log
 
-![Google Sheets Log](screenshots/google_sheet.png)
-
-### Hardware Setup
-
-![Circuit](screenshots/circuit.jpg)
-
-### Unique QR Codes
-
-![QR Codes](screenshots/qr_codes.png)
+![Google Sheets Log](screenshots/Couds%20Logs.jpg)
 ---
 
 ## Scope and Limitations
