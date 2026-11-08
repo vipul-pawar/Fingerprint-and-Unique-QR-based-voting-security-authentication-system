@@ -25,7 +25,7 @@ Traditional voting is exposed to impersonation, proxy voting and fake voter IDs.
 
 ## How It Works
 
-![HOW it WORKS](screenshots/QR Fingerprint Verification System Infographic.png)
+![HOW it WORKS](screenshots/QR%20Fingerprint%20Verification%20System%20Infographic.png)
 
 1. The voter connects to the ESP32 hotspot.
 2. The voter scans their unique QR code, which opens `http://192.168.4.1/send?qr=<VOTER_ID>`. The ESP32 stores the ID and redirects to the home page.
